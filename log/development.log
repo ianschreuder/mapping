@@ -15,3 +15,5 @@ Migrating to CreateCoords (20090819193414)
   [4;35;1mSQL (55.6ms)[0m   [0mSHOW KEYS FROM `coords`[0m
   [4;36;1mSQL (49.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
   [4;35;1mCoord Load (51.6ms)[0m   [0mSELECT * FROM `coords` [0m
+  [4;36;1mSQL (47.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCoord Load (51.2ms)[0m   [0mSELECT * FROM `coords` [0m
