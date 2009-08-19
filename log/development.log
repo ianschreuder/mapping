@@ -17,3 +17,28 @@ Migrating to CreateCoords (20090819193414)
   [4;35;1mCoord Load (51.6ms)[0m   [0mSELECT * FROM `coords` [0m
   [4;36;1mSQL (47.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
   [4;35;1mCoord Load (51.2ms)[0m   [0mSELECT * FROM `coords` [0m
+  [4;36;1mSQL (80.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-19 14:37:46) [GET]
+
+ActionController::RoutingError (No route matches "/coord" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (81.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoordsController#index (for 127.0.0.1 at 2009-08-19 14:38:04) [GET]
+  [4;36;1mCoord Load (79.8ms)[0m   [0;1mSELECT * FROM `coords` [0m
+Rendering template within layouts/coords
+Rendering coords/index
+Completed in 486ms (View: 400, DB: 161) | 200 OK [http://localhost/coords]
+  [4;35;1mSQL (83.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoordsController#new (for 127.0.0.1 at 2009-08-19 14:38:07) [GET]
+  [4;36;1mCoord Columns (83.2ms)[0m   [0;1mSHOW FIELDS FROM `coords`[0m
+Rendering template within layouts/coords
+Rendering coords/new
+Completed in 103ms (View: 13, DB: 167) | 200 OK [http://localhost/coords/new]
