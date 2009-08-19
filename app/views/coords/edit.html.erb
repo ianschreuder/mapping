@@ -1,0 +1,12 @@
+<h1>Editing coord</h1>
+
+<% form_for(@coord) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @coord %> |
+<%= link_to 'Back', coords_path %>
