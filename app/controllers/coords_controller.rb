@@ -1,4 +1,6 @@
 class CoordsController < ApplicationController
+  layout "application"
+
   # GET /coords
   # GET /coords.xml
   def index
