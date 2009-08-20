@@ -1,0 +1,147 @@
+/* --------------------------------------------------------------------- */
+/* FORMS */
+/* --------------------------------------------------------------------- */
+
+/*
+
+	FORM MARKUP
+	-------------------------------------------------------------
+	
+	<form action="#" method="#">
+	
+		<fieldset>
+			<label for="input_id">[field name]</label>
+			<input type="text" id="input_id" name="input_id"/>
+			
+			<label for="select_id">[field name]</label>
+			<select id="select_id" name="select_id">
+				<option value="[value]">[label]</option>
+				...
+			</select>
+			
+			<span class="label">[field group name]</span>
+			<ul class="input">
+				<li><input type="[radio/checkbox]" id="input_id" name="input_id"/> <label for="input_id">[field name]</label></li>
+				<li><input type="[radio/checkbox]" id="input_id" name="input_id"/> <label for="input_id">[field name]</label></li>
+				<li><input type="[radio/checkbox]" id="input_id" name="input_id"/> <label for="input_id">[field name]</label></li>
+			</ul>
+			
+			<span class="label">[field name]</span>
+			<div class="table_input">
+				<table>
+					<tbody>
+						<tr>
+							<td><input type="checkbox"/></td>
+							<td>[attribute]</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox"/></td>
+							<td>[attribute]</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox"/></td>
+							<td>[attribute]</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			<fieldset class="button_wrapper">
+				<input type="submit" class="button" value="Submit"/>
+			</fieldset>
+			
+		</fieldset>
+		
+	</form>
+
+*/
+
+input, .input, select, textarea, label, .label {
+	display:block;
+	width:200px;
+	text-align:left;
+	}
+.input {
+	width:auto;
+	}
+.input li {
+	list-style:none !important;
+	}
+label,.label {
+	margin-top:10px;
+	}
+.input label {
+	margin-top:0;
+	font-size:11px;
+	}
+.input input, .input label {
+	width:auto;
+	display:inline;
+	}
+.table_input {
+	border-width:1px;
+	border-style:solid;
+	border-color:#f3f3f3 #d6d6d6 #d6d6d6 #f3f3f3;
+	background:#FFF;
+	height:150px;
+	overflow:auto;
+	}
+.table_input input {
+	width:auto;
+	border-width:0;
+	background:transparent;
+	}
+.table_input label {
+	display:inline;
+	margin:0;
+	}
+.text .table_input table {
+	margin:0 !important;
+	}
+.table_display {
+	width:auto;
+	border-width:1px;
+	border-style:solid;
+	border-color:#d6d6d6 #f3f3f3 #f3f3f3 #d6d6d6;
+	background:#FFF;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	}
+textarea, input {
+	font-size:12px;
+	color:#666;
+	background:#FFF;
+	border:1px solid #CCC;
+	line-height:18px;
+	}
+.input input {
+	border-width:0;
+	background:transparent;
+	}
+input[type="hidden"]{
+	display:none !important;
+	}
+input.temp {
+	color:#999;
+	font-style:italic;
+	}
+td input {
+	width:auto;
+	}
+td input[type=text] {
+	width:90%;
+	}
+td textarea {
+	width:90%;
+	}
+fieldset.separate {
+	border-top:1px solid #CCC;
+	margin-top:20px;
+	}
+label.required, .label.required {
+	font-weight:bold;
+	}
+.pathway_negative label, .pathway_negative input {
+	display:inline;
+	width:auto;
+	}

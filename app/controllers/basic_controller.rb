@@ -1,7 +1,7 @@
 class BasicController < ActionController::Base
   
   def index
-    @coords = Coord.find(:all)
+    @coord = Coord.find(:first)
   end
   
 end

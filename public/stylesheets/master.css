@@ -1,0 +1,57 @@
+/*
+
+	CREATING OR EDITING CSS
+	-------------------------------------------------------------
+	If you wish to add css or make changes, please do so by
+	creating your own stylesheet and adding it below. Use
+	[your_name].css and let Brian know when you've completed
+	your changes so he may review and integrate them.
+
+	
+	GENERAL LAYOUT AND COLUMNS MARKUP
+	-------------------------------------------------------------
+	Refer to : http://developer.yahoo.com/yui/docs/assets/cheatsheets.zip
+
+
+	COLOR CODES
+	-------------------------------------------------------------
+	Font color 								#666
+	Link hover								#F90
+
+	Neutral :
+		Link										#666
+		Table Row 							#F5F5F5
+		Panel background				#EFEFEF
+		Headers									#666
+		Panel shadow						#D6D6D6
+		Panel highlight					#F3F3F3
+
+	Stage I :
+		Link										#617E9B
+		Panel background				#D7E2EE
+		Table Row								#F1F4F8
+		Panel shadow						#C1CAD3
+		Panel highlight					#CFD8E2
+		Headers									#617E9B
+
+	Facility Tasks :
+		Link										#B08756
+		Panel background				#E8E0D1
+		Table Row								#F3EFE8
+		Panel shadow						#CFC7BA
+		Panel highlight					#DDD5C7
+		Headers									#B08756
+
+	Stage II :
+		Link										#6B8669
+		Panel background				#E0E6CD
+		Table Row								#EEF1E4
+		Panel shadow						#C7CDB6
+		Panel highlight					#D5DBC3
+		Headers									#6B8669
+
+*/
+
+@import url("base.css");
+@import url("forms.css");
+@import url("buttons.css");

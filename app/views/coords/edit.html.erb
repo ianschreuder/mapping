@@ -2,11 +2,15 @@
 
 <% form_for(@coord) do |f| %>
   <%= f.error_messages %>
-
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
+  <label for="x_utm">X UTM</label><input type="text" name="coord[x_utm]" value="<%=h(@coord.x_utm)%>">
+  <label for="y_utm">Y UTM</label><input type="text" name="coord[y_utm]" value="<%=h(@coord.y_utm)%>">
+  <label for="latitude">Latitude</label><input type="text" name="coord[latitude]" value="<%=h(@coord.latitude)%>">
+  <label for="longitude">Longitude</label><input type="text" name="coord[longitude]" value="<%=h(@coord.longitude)%>">
+	<fieldset class="button_wrapper">
+		<input id="submit" type="submit" class="button" value="Update" name="update"/>
+	</fieldset>
 <% end %>
 
+<br />
 <%= link_to 'Show', @coord %> |
 <%= link_to 'Back', coords_path %>

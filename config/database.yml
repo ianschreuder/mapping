@@ -3,4 +3,5 @@ development:
   database: mapping
   username: external
   password: Athmol.0
+  # host: 192.168.0.105
   host: 71.208.129.241 

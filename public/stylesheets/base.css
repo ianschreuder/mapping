@@ -1,0 +1,202 @@
+/* --------------------------------------------------------------------- */
+/* GENERAL */
+/* --------------------------------------------------------------------- */
+
+html {
+	background:#FFF;
+	color:#333;
+	}
+h1 {
+	font-size:170%;
+	padding-bottom:0;
+	}
+em {
+	font-style:italic;
+	}
+strong {
+	font-weight:bold;
+	}
+.search_hit {
+	color:#FFF;
+	font-weight:bold;
+	background:#F90;
+	}
+
+/* Table/List alternating rows */
+
+.odd, .odd td {
+	background:#F5F5F5;
+	}
+
+/* Link colors */
+
+a, a:link, a:visited {
+	color:#600;
+	text-decoration:none;
+	}
+a:hover {
+	color:#F90 !important;
+	}
+
+/* Stage I */
+
+#stagei a, #stagei a:link, #stagei a:visited {
+	color:#617e9b;
+	text-decoration:none;
+	}
+#stagei .odd, #stagei .odd td, #stagei .alternate .odd li {
+	background:#f1f4f8;
+	}
+#stagei h1, #stagei h2, #stagei .bar h3, #stagei .bar h4, #stagei .bar h5, #stagei .bar h6 {
+	color:#617e9b;
+	}
+
+/* Facility Tasks */
+
+#facility_tasks a, #facility_tasks a:link, #facility_tasks a:visited {
+	color:#b08756;
+	text-decoration:none;
+	}
+#facility_tasks .odd, #facility_tasks .odd td, #facility_tasks .alternate .odd li {
+	background:#f3efe8;
+	}
+#facility_tasks h1, #facility_tasks h2, #facility_tasks .bar h3, #facility_tasks .bar h4, #facility_tasks .bar h5, #facility_tasks .bar h6 {
+	color:#b08756;
+	}
+
+/* Stage II */
+
+#stageii a, #stageii a:link, #stageii a:visited {
+	color:#6b8669;
+	text-decoration:none;
+	}
+#stageii .odd th, #stageii .odd td, #stageii .alterante .odd li {
+	background:#eef1e4;
+	}
+#stageii h1, #stageii h2, #stageii .bar h3, #stageii .bar h4, #stageii .bar h5, #stageii .bar h6 {
+	color:#6b8669;
+	}
+
+/* Link hover */
+
+a:hover, #stagei a:hover, #facility_tasks a:hover, #stageii a:hover {
+	color:#333;
+	}
+
+/* --------------------------------------------------------------------- */
+/* TABLES */
+/* --------------------------------------------------------------------- */
+
+table {
+	background:#FFF;
+	width:100%;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	}
+th img, td img {
+	vertical-align:middle;
+	}
+th {
+	font-weight:bold;
+	}
+th, td {
+	font-size:95%;
+	line-height:130% !important;
+	padding:3px !important;
+	vertical-align:top;
+	padding:0 5px;
+	text-align:left;
+	border-width:0;
+	}
+thead th, thead td {
+	border-bottom:1px solid #EFEFEF !important;
+	}
+tr.hover td {
+	color:#000;
+	}
+col.break_right {
+	border-right:1px solid #CCC
+	}
+col.break_left {
+	border-left:1px solid #CCC
+	}
+col.break_both {
+	border-width:0 1px;
+	border-style:solid;
+	border-color:#CCC;
+	}
+tfoot td, tfoot th {
+	font-weight:bold;
+	border-top:1px solid #CCC !important;
+	}
+table.left td, table.left th, table td.left, table th.left {
+	text-align:left;
+	}
+table.center td, table.center th, table td.center, table th.center {
+	text-align:center;
+	}
+table.right td, table.right th, table td.right, table th.right {
+	text-align:right;
+	}
+
+/* Stage II */
+
+#stageii col.break_right {
+	border-color:#d5dbc3
+	}
+#stageii col.break_left {
+	border-color:#d5dbc3
+	}
+#stageii col.break_both {
+	border-color:#d5dbc3;
+	}
+#stageii tfoot td, #stageii tfoot th {
+	border-top:1px solid #d5dbc3 !important;
+	}
+#stageii_report td, #stageii_report th {
+	text-align:center;
+	}
+#stageii_report td.left,#stageii_report th.left {
+	text-align:left;
+	}
+
+/* --------------------------------------------------------------------- */
+/* BODY */
+/* --------------------------------------------------------------------- */
+
+#bd {
+	margin:0 -10px;
+	background:#FFF;
+	padding:10px 10px 30px 10px;
+	}
+
+/* --------------------------------------------------------------------- */
+/* FOOTER */
+/* --------------------------------------------------------------------- */
+
+#ft {
+	text-align:center;
+	font-size:10px;
+	color:#999;
+	padding:15px 0 0 0;
+	}
+
+/* --------------------------------------------------------------------- */
+/* CLEARING ELEMENT - DO NOT EDIT! */
+/* --------------------------------------------------------------------- */
+
+.clr {
+	width:100%;
+	clear:both !important;
+	display:inline-block;
+	}
+.clr:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+	}
+* html .clr {
+	height:1%;
+	}

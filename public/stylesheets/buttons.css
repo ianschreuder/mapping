@@ -1,0 +1,205 @@
+/* --------------------------------------------------------------------- */
+/* BUTTONS */
+/* --------------------------------------------------------------------- */
+
+/*
+
+	BUTTON MARKUP
+	-------------------------------------------------------------
+	Any of the following will be rendered as a "button"
+	
+	<button>[button text]</button>
+	
+	<input type="submit" class="button" value="[button text]"/>
+	
+	<input type="button" class="button" value="[button text]"/>
+	
+	<a href="#" class="button">[button text]</a>
+	
+	BUTTON GROUP MARKUP
+	-------------------------------------------------------------
+	Each <li/> will be treated as a button and there will be
+	no spacing between them. Pagination is the best
+	example of it's use
+	
+	<ul class="pagination">
+		<li><span>&#171;</span></li>
+		<li><span>1</span></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">&#187;</a></li>
+	</ul>
+
+*/
+
+.button_small, button, .button {
+	white-space:nowrap;
+	text-align:center;
+	display:block;
+	float:left;
+	height:20px;
+	line-height:18px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#f3f3f3 #d6d6d6 #d6d6d6 #f3f3f3;
+	padding:0 10px;
+	cursor:pointer;
+	margin:0;
+	font-size:12px;
+	font-weight:normal;
+	background:#EFEFEF url("/images/neutral/button_gradient.gif") repeat-x;
+	color:#600;
+	-moz-border-radius:5px;
+  -webkit-border-radius:5px;
+	}
+.table_input input.button_small {
+	border-width:1px;
+	background:#d7e2ee url("/images/neutral/button_gradient.gif") repeat-x;
+	}
+button:hover, .button:hover, .button_small:hover {
+	color:#F90 !important;
+	border-color:#F90 !important;
+	}
+a.button, a.button:link, a.button:visited {
+	text-decoration:none;
+	display:block;
+	height:18px;
+	}
+.button_small {
+	line-height:13px;
+	font-size:9px;
+	font-weight:bold;
+	cursor:pointer;
+	text-transform:uppercase;
+	margin:0 5px 0 0;
+	padding:0 5px;
+	}
+a.button_small, button.button_small {
+	height:13px;
+	}
+input.button_small {
+	height:16px;
+	}
+.beta button, .beta .button {
+	margin-right:4px;
+	}
+.gamma button, .gamma .button {
+	margin-left:4px;
+	}
+.alpha button, .alpha .button {
+	margin:0 2px;
+	}
+input.button, input.button_small {
+	width:auto;
+	}
+.button_wrapper {
+	margin-top:10px;
+	}
+.button_wrapper button,.button_wrapper .button,.button_wrapper a.button,.button_wrapper a.button_small {
+	margin-right:4px;
+	}
+
+/* Button Group */
+
+.pagination {
+	list-style:none;
+	height:20px;
+	margin:0;
+	padding:0;
+	}
+.pagination li {
+	float:left;
+	margin:0 !important;
+	}
+.pagination li span, .pagination li a, .pagination li a:link, .pagination li a:visited {
+	background:#EFEFEF url("/images/neutral/button_gradient.gif") repeat-x;
+	text-decoration:none;
+	display:block;
+	float:left;
+	padding:0 5px;
+	line-height:18px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#f3f3f3 #d6d6d6 #d6d6d6 #f3f3f3;
+	height:18px;
+	}
+.pagination li span {
+	color:#d6d6d6 !important;
+	}
+.pagination li a, .pagination li a:link, .pagination li a:visited {
+	color:#666;
+	}
+button:hover, .button:hover, .button_small:hover, .pagination li a:hover {
+	color:#F90 !important;
+	}
+.gamma .pagination {
+	border-left:1px solid #f3f3f3;
+	}
+.gamma .pagination li span, .gamma .pagination li a {
+	border-width:1px 1px 1px 0;
+	}
+.beta .pagination {
+	border-right:1px solid #d6d6d6;
+	}
+.beta .pagination li span, .beta .pagination li a {
+	border-width:1px 0 1px 1px;
+	}
+
+/* Stage I Buttons */
+
+#stagei button, #stagei .button, #stagei .button_small, #stagei .pagination li span, #stagei .pagination li a {
+	background:#d7e2ee url("/images/stagei/button_gradient.gif") repeat-x;
+	border-color:#cfd8e2 #c1cad3 #c1cad3 #cfd8e2;
+	color:#264C73;
+	}
+#stagei .beta .pagination {
+	border-right:1px solid #c1cad3;
+	}
+#stagei .gamma .pagination {
+	border-left:1px solid #cfd8e2;
+	}
+#stagei .table_input input.button_small {
+	border-width:1px;
+	background:#d7e2ee url("/images/stagei/button_gradient.gif") repeat-x;
+	}
+#stagei .button.disabled, #stagei .button_small.disabled, #stagei .button.disabled:hover, #stagei .button_small.disabled:hover {
+	color:#cfd8e2 !important;
+	border-color:#cfd8e2;
+	cursor:default;
+	}
+
+/* Facility Tasks Buttons */
+
+#facility_tasks button, #facility_tasks .button, #facility_tasks .button_small, #facility_tasks .pagination li span, #facility_tasks .pagination li a {
+	background:#e8e0d1 url("/images/facility_tasks/button_gradient.gif") repeat-x;
+	border-color:#cfc7ba;
+	color:#b08756;
+	}
+#facility_tasks .beta .pagination {
+	border-right:1px solid #c7cdb6;
+	}
+#facility_tasks .gamma .pagination {
+	border-left:1px solid #cfd8e2;
+	}
+#facility_tasks .table_input input.button_small {
+	border-width:1px;
+	background:#d7e2ee url("/images/facility_tasks/button_gradient.gif") repeat-x;
+	}
+
+/* Stage II Buttons */
+
+#stageii button, #stageii .button, #stageii .button_small, #stageii .pagination li span, #stageii .pagination li a {
+	background:#e0e6cd url("/images/stageii/button_gradient.gif") repeat-x;
+	border-color:#d5dbc3 #c7cdb6 #c7cdb6 #d5dbc3;
+	color:#6b8669;
+	}
+#stageii .beta .pagination {
+	border-right:1px solid #c7cdb6;
+	}
+#stageii .gamma .pagination {
+	border-left:1px solid #d5dbc3;
+	}
+#stageii .table_input input.button_small {
+	border-width:1px;
+	background:#d7e2ee url("/images/stageii/button_gradient.gif") repeat-x;
+	}
