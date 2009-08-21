@@ -1301,3 +1301,118 @@ Processing DashController#index (for 127.0.0.1 at 2009-08-19 21:28:25) [GET]
 Rendering template within layouts/application
 Rendering dash/index
 Completed in 11ms (View: 9, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (70.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DashController#index (for 192.168.0.100 at 2009-08-20 20:29:47) [GET]
+Rendering template within layouts/application
+Rendering dash/index
+Completed in 85ms (View: 83, DB: 70) | 200 OK [http://mapping.local/]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 192.168.0.100 at 2009-08-20 20:29:50) [GET]
+  [4;36;1mCoord Load (216.8ms)[0m   [0;1mSELECT * FROM `coords` LIMIT 1[0m
+Rendering template within layouts/googlemap
+Rendering basic/index
+  [4;35;1mCoord Columns (42.7ms)[0m   [0mSHOW FIELDS FROM `coords`[0m
+Completed in 306ms (View: 37, DB: 260) | 200 OK [http://mapping.local/basic]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DashController#index (for 192.168.0.100 at 2009-08-20 20:30:41) [GET]
+Rendering template within layouts/application
+Rendering dash/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://mapping.local/]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 192.168.0.100 at 2009-08-20 20:30:43) [GET]
+  [4;36;1mCoord Load (0.3ms)[0m   [0;1mSELECT * FROM `coords` LIMIT 1[0m
+Rendering template within layouts/googlemap
+Rendering basic/index
+  [4;35;1mCoord Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `coords`[0m
+Completed in 7ms (View: 3, DB: 2) | 200 OK [http://mapping.local/basic]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 192.168.0.100 at 2009-08-20 20:32:43) [GET]
+  [4;35;1mCoord Load (0.3ms)[0m   [0mSELECT * FROM `coords` LIMIT 1[0m
+Rendering template within layouts/googlemap
+Rendering basic/index
+  [4;36;1mCoord Columns (11.5ms)[0m   [0;1mSHOW FIELDS FROM `coords`[0m
+Completed in 27ms (View: 12, DB: 12) | 200 OK [http://mapping.local/basic]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 192.168.0.100 at 2009-08-20 20:32:57) [GET]
+  [4;36;1mCoord Load (0.2ms)[0m   [0;1mSELECT * FROM `coords` LIMIT 1[0m
+Rendering basic/index
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://mapping.local/basic]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 192.168.0.100 at 2009-08-20 20:33:24) [GET]
+  [4;36;1mCoord Load (0.2ms)[0m   [0;1mSELECT * FROM `coords` LIMIT 1[0m
+Rendering basic/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://mapping.local/basic]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 192.168.0.100 at 2009-08-20 20:33:33) [GET]
+  [4;36;1mCoord Load (0.3ms)[0m   [0;1mSELECT * FROM `coords` LIMIT 1[0m
+Rendering template within layouts/googlemap
+Rendering basic/index
+Completed in 9ms (View: 6, DB: 1) | 200 OK [http://mapping.local/basic]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 192.168.0.100 at 2009-08-20 20:35:01) [GET]
+  [4;36;1mCoord Load (0.3ms)[0m   [0;1mSELECT * FROM `coords` LIMIT 1[0m
+Rendering template within layouts/googlemap
+Rendering basic/index
+Completed in 61ms (View: 57, DB: 0) | 200 OK [http://mapping.local/basic]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 192.168.0.100 at 2009-08-20 20:35:07) [GET]
+  [4;36;1mCoord Load (1.2ms)[0m   [0;1mSELECT * FROM `coords` LIMIT 1[0m
+Rendering template within layouts/googlemap
+Rendering basic/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://mapping.local/basic]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 192.168.0.100 at 2009-08-20 20:36:06) [GET]
+  [4;36;1mCoord Load (0.2ms)[0m   [0;1mSELECT * FROM `coords` LIMIT 1[0m
+Rendering template within layouts/googlemap
+Rendering basic/index
+  [4;35;1mCoord Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `coords`[0m
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://mapping.local/basic]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 192.168.0.100 at 2009-08-20 20:36:28) [GET]
+  [4;35;1mCoord Load (0.4ms)[0m   [0mSELECT * FROM `coords` LIMIT 1[0m
+Rendering template within layouts/googlemap
+Rendering basic/index
+  [4;36;1mCoord Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `coords`[0m
+Completed in 11ms (View: 4, DB: 2) | 200 OK [http://mapping.local/basic]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 192.168.0.100 at 2009-08-20 20:50:02) [GET]
+  [4;35;1mCoord Load (0.3ms)[0m   [0mSELECT * FROM `coords` LIMIT 1[0m
+Rendering template within layouts/googlemap
+Rendering basic/index
+  [4;36;1mCoord Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `coords`[0m
+Completed in 60ms (View: 54, DB: 2) | 200 OK [http://mapping.local/basic]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 192.168.0.100 at 2009-08-20 20:52:03) [GET]
+  [4;36;1mCoord Load (0.2ms)[0m   [0;1mSELECT * FROM `coords` LIMIT 1[0m
+Rendering template within layouts/googlemap
+Rendering basic/index
+  [4;35;1mCoord Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `coords`[0m
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://mapping.local/basic]
