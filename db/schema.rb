@@ -9,13 +9,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090819193414) do
+ActiveRecord::Schema.define(:version => 2) do
 
   create_table "coords", :force => true do |t|
     t.string   "x_utm"
     t.string   "y_utm"
     t.string   "latitude"
     t.string   "longitude"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "enodes", :force => true do |t|
+    t.integer  "coord_id"
+    t.string   "info1"
+    t.string   "info2"
+    t.string   "info3"
+    t.string   "info4"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

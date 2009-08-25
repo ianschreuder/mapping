@@ -33,5 +33,3 @@
 <br />
 
 <%= link_to 'New coord', new_coord_path %>
-<hr />
-<a href="/">Home</a>

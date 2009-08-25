@@ -5,6 +5,3 @@
 
 <%= link_to 'Edit', edit_coord_path(@coord) %> |
 <%= link_to 'Back', coords_path %>
-
-<hr />
-<a href="/">Home</a>

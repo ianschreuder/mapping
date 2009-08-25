@@ -1,0 +1,17 @@
+<h1>Editing Electricity Node</h1>
+
+<% form_for(@enode) do |f| %>
+  <%= f.error_messages %>
+  <label for="x_utm">Coordinate</label><%=h(@enode.coord.to_s)%>
+  <label for="info1">Info 1</label><input type="text" name="enode[info1]" value="<%=h(@enode.info1)%>">
+  <label for="info1">Info 2</label><input type="text" name="enode[info2]" value="<%=h(@enode.info2)%>">
+  <label for="info1">Info 3</label><input type="text" name="enode[info3]" value="<%=h(@enode.info3)%>">
+  <label for="info1">Info 4</label><input type="text" name="enode[info4]" value="<%=h(@enode.info4)%>">
+	<fieldset class="button_wrapper">
+		<input id="submit" type="submit" class="button" value="Update" name="update"/>
+	</fieldset>
+<% end %>
+
+<br />
+<%= link_to 'Show', @enode %> |
+<%= link_to 'Back', enodes_path %>

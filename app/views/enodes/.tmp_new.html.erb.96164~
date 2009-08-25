@@ -1,0 +1,20 @@
+<h1>New Electricity Node</h1>
+
+<% form_for(@node) do |f| %>
+  <%= f.error_messages %>
+  <select name="node(coord)" >
+<% Coord.find(:all).select{|c| c.e_nodes.blank? }.each do |coord| -%>
+    <option value="<%=coord.id%>"><%= h(coord.to_s) %></option>
+<% end -%>
+  </select>
+  <label for="info1">Info 1</label><input id="info1" type="text" name="node[info1]">
+  <label for="info2">Info 2</label><input id="info2" type="text" name="node[info2]">
+  <label for="info3">Info 3</label><input id="info3" type="text" name="node[info3]">
+  <label for="info4">Info 4</label><input id="info4" type="text" name="node[info4]">
+	<fieldset class="button_wrapper">
+		<input id="submit" type="submit" class="button" value="Create" name="create"/>
+	</fieldset>
+<% end %>
+<br />
+<%= link_to 'Back', enodes_path %>
+

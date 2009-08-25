@@ -13,5 +13,3 @@
 <br />
 <%= link_to 'Back', coords_path %>
 
-<hr />
-<a href="/">Home</a>

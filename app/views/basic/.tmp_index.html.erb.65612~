@@ -17,14 +17,15 @@
 </head>
 
 <body>
+  <a href="/coords">Add Coord</a><br />
+  <a href="/enodes">Add Node</a><br />
+  <br />
+
   <span id="display_span">Display Coords on Map</span><br />
   <span id="enode_span">Display Electricity Nodes on Map</span>
   <br />
   <br />
   <div id="map_canvas"></div>
-  
-  <hr />
-  <a href="/">Home</a>
 
 </body>
 
