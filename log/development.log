@@ -1301,3 +1301,263 @@ Processing DashController#index (for 127.0.0.1 at 2009-08-19 21:28:25) [GET]
 Rendering template within layouts/application
 Rendering dash/index
 Completed in 11ms (View: 9, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (115.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCoord Load (119.0ms)[0m   [0mSELECT * FROM `coords` [0m
+  [4;36;1mCoord Columns (92.2ms)[0m   [0;1mSHOW FIELDS FROM `coords`[0m
+  [4;36;1mSQL (87.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-22 14:23:35) [GET]
+
+ActionController::RoutingError (No route matches "/login" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  passenger (2.2.4) lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:334:in `block in handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:162:in `start'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:261:in `block (2 levels) in spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:255:in `block in spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:80:in `block in synchronize'
+  <internal:prelude>:8:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (86.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DashController#index (for 127.0.0.1 at 2009-08-22 14:23:50) [GET]
+Rendering template within layouts/application
+Rendering dash/index
+Completed in 57ms (View: 55, DB: 87) | 200 OK [http://map.local/]
+  [4;36;1mSQL (86.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 127.0.0.1 at 2009-08-22 14:24:00) [GET]
+  [4;35;1mCoord Load (91.4ms)[0m   [0mSELECT * FROM `coords` LIMIT 1[0m
+Rendering template within layouts/googlemap
+Rendering basic/index
+  [4;36;1mCoord Columns (91.1ms)[0m   [0;1mSHOW FIELDS FROM `coords`[0m
+Completed in 216ms (View: 26, DB: 269) | 200 OK [http://map.local/basic]
+  [4;36;1mSQL (87.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 127.0.0.1 at 2009-08-22 14:34:46) [GET]
+  [4;35;1mCoord Load (92.4ms)[0m   [0mSELECT * FROM `coords` LIMIT 1[0m
+Rendering template within layouts/googlemap
+Rendering basic/index
+Completed in 119ms (View: 21, DB: 179) | 200 OK [http://map.local/basic]
+  [4;36;1mSQL (85.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 127.0.0.1 at 2009-08-22 14:35:11) [GET]
+  [4;35;1mCoord Load (89.6ms)[0m   [0mSELECT * FROM `coords` LIMIT 1[0m
+Rendering template within layouts/googlemap
+Rendering basic/index
+Completed in 96ms (View: 1, DB: 175) | 200 OK [http://map.local/basic]
+  [4;36;1mSQL (87.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 127.0.0.1 at 2009-08-22 14:35:24) [GET]
+  [4;35;1mCoord Load (91.6ms)[0m   [0mSELECT * FROM `coords` LIMIT 1[0m
+Rendering template within layouts/googlemap
+Rendering basic/index
+Completed in 98ms (View: 1, DB: 179) | 200 OK [http://map.local/basic]
+  [4;36;1mSQL (87.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 127.0.0.1 at 2009-08-22 14:36:15) [GET]
+  [4;35;1mCoord Load (90.6ms)[0m   [0mSELECT * FROM `coords` LIMIT 1[0m
+Rendering template within layouts/googlemap
+Rendering basic/index
+Completed in 107ms (View: 11, DB: 178) | 200 OK [http://map.local/basic]
+  [4;36;1mSQL (85.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 127.0.0.1 at 2009-08-22 14:36:40) [GET]
+  [4;35;1mCoord Load (90.4ms)[0m   [0mSELECT * FROM `coords` LIMIT 1[0m
+Rendering basic/index
+Completed in 97ms (View: 1, DB: 176) | 200 OK [http://map.local/basic]
+  [4;36;1mSQL (85.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 127.0.0.1 at 2009-08-22 14:38:11) [GET]
+  [4;35;1mCoord Load (90.4ms)[0m   [0mSELECT * FROM `coords` LIMIT 1[0m
+Rendering basic/index
+Completed in 106ms (View: 10, DB: 176) | 200 OK [http://map.local/basic]
+  [4;36;1mSQL (84.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 127.0.0.1 at 2009-08-22 14:40:07) [GET]
+  [4;35;1mCoord Load (89.9ms)[0m   [0mSELECT * FROM `coords` LIMIT 1[0m
+Rendering basic/index
+Completed in 107ms (View: 10, DB: 175) | 200 OK [http://map.local/basic]
+  [4;36;1mSQL (103.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 127.0.0.1 at 2009-08-22 14:47:12) [GET]
+  [4;35;1mCoord Load (132.0ms)[0m   [0mSELECT * FROM `coords` LIMIT 1[0m
+Rendering basic/index
+Completed in 145ms (View: 8, DB: 235) | 200 OK [http://map.local/basic]
+  [4;36;1mSQL (86.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 127.0.0.1 at 2009-08-22 14:50:57) [GET]
+  [4;35;1mCoord Load (90.8ms)[0m   [0mSELECT * FROM `coords` LIMIT 1[0m
+Rendering basic/index
+Completed in 106ms (View: 10, DB: 177) | 200 OK [http://map.local/basic]
+  [4;36;1mSQL (86.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 127.0.0.1 at 2009-08-22 14:52:24) [GET]
+  [4;35;1mCoord Load (91.5ms)[0m   [0mSELECT * FROM `coords` LIMIT 1[0m
+Rendering basic/index
+Completed in 107ms (View: 10, DB: 178) | 200 OK [http://map.local/basic]
+  [4;36;1mSQL (85.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 127.0.0.1 at 2009-08-22 14:54:56) [GET]
+  [4;35;1mCoord Load (91.1ms)[0m   [0mSELECT * FROM `coords` LIMIT 1[0m
+Rendering basic/index
+Completed in 107ms (View: 10, DB: 177) | 200 OK [http://map.local/basic]
+  [4;36;1mSQL (84.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoordsController#index (for 127.0.0.1 at 2009-08-22 14:58:31) [GET]
+  Parameters: {"controller"=>"coords", "action"=>"index"}
+  [4;35;1mCoord Load (91.0ms)[0m   [0mSELECT * FROM `coords` [0m
+Rendering template within layouts/application
+Rendering coords/index
+  [4;36;1mCoord Columns (91.2ms)[0m   [0;1mSHOW FIELDS FROM `coords`[0m
+Completed in 286ms (View: 98, DB: 266) | 200 OK [http://map.local/coords]
+  [4;35;1mSQL (85.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#coords (for 127.0.0.1 at 2009-08-22 14:58:47) [GET]
+  [4;36;1mCoord Load (91.5ms)[0m   [0;1mSELECT * FROM `coords` [0m
+  [4;35;1mCoord Columns (92.2ms)[0m   [0mSHOW FIELDS FROM `coords`[0m
+
+ActionView::MissingTemplate (Missing template basic/coords.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  passenger (2.2.4) lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:334:in `block in handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:162:in `start'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:261:in `block (2 levels) in spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:255:in `block in spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:80:in `block in synchronize'
+  <internal:prelude>:8:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (86.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#coords (for 127.0.0.1 at 2009-08-22 14:59:14) [GET]
+  [4;35;1mCoord Load (91.0ms)[0m   [0mSELECT * FROM `coords` [0m
+  [4;36;1mCoord Columns (91.1ms)[0m   [0;1mSHOW FIELDS FROM `coords`[0m
+Completed in 189ms (View: 1, DB: 268) | 200 OK [http://map.local/basic/coords]
+  [4;35;1mSQL (85.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#coords (for 127.0.0.1 at 2009-08-22 15:02:31) [GET]
+  [4;36;1mCoord Load (91.3ms)[0m   [0;1mSELECT * FROM `coords` [0m
+  [4;35;1mCoord Columns (92.1ms)[0m   [0mSHOW FIELDS FROM `coords`[0m
+Completed in 196ms (View: 7, DB: 269) | 200 OK [http://map.local/basic/coords]
+  [4;36;1mSQL (85.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCoord Load (91.0ms)[0m   [0mSELECT * FROM `coords` [0m
+  [4;36;1mCoord Columns (93.1ms)[0m   [0;1mSHOW FIELDS FROM `coords`[0m
+  [4;35;1mCoord Load (91.7ms)[0m   [0mSELECT * FROM `coords` [0m
+  [4;36;1mCoord Load (2526.4ms)[0m   [0;1mSELECT * FROM `coords` WHERE (`coords`.`id` = 4) [0m
+  [4;35;1mSQL (86.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCoord Destroy (104.8ms)[0m   [0;1mDELETE FROM `coords` WHERE `id` = 4[0m
+  [4;35;1mSQL (89.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mCoord Load (91.9ms)[0m   [0;1mSELECT * FROM `coords` [0m
+  [4;36;1mSQL (85.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#coords (for 127.0.0.1 at 2009-08-22 15:09:05) [GET]
+  [4;35;1mCoord Load (91.2ms)[0m   [0mSELECT * FROM `coords` [0m
+  [4;36;1mCoord Columns (92.4ms)[0m   [0;1mSHOW FIELDS FROM `coords`[0m
+Completed in 195ms (View: 3, DB: 269) | 200 OK [http://map.local/basic/coords]
+  [4;36;1mSQL (85.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 127.0.0.1 at 2009-08-22 15:09:11) [GET]
+Rendering basic/index
+Completed in 9ms (View: 8, DB: 86) | 200 OK [http://map.local/basic]
+  [4;35;1mSQL (85.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#coords (for 127.0.0.1 at 2009-08-22 15:09:32) [GET]
+  [4;36;1mCoord Load (90.3ms)[0m   [0;1mSELECT * FROM `coords` [0m
+  [4;35;1mCoord Columns (91.5ms)[0m   [0mSHOW FIELDS FROM `coords`[0m
+Completed in 196ms (View: 1, DB: 267) | 200 OK [http://map.local/basic/coords]
+  [4;36;1mSQL (84.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 127.0.0.1 at 2009-08-22 15:12:54) [GET]
+Rendering basic/index
+Completed in 3ms (View: 1, DB: 85) | 200 OK [http://map.local/basic]
+  [4;35;1mSQL (85.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#coords (for 127.0.0.1 at 2009-08-22 15:13:00) [GET]
+  [4;36;1mCoord Load (90.7ms)[0m   [0;1mSELECT * FROM `coords` [0m
+  [4;35;1mCoord Columns (99.2ms)[0m   [0mSHOW FIELDS FROM `coords`[0m
+Completed in 199ms (View: 1, DB: 275) | 200 OK [http://map.local/basic/coords]
+  [4;36;1mSQL (98.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 127.0.0.1 at 2009-08-22 15:13:43) [GET]
+Rendering basic/index
+Completed in 3ms (View: 1, DB: 99) | 200 OK [http://map.local/basic]
+  [4;35;1mSQL (84.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 127.0.0.1 at 2009-08-22 15:14:08) [GET]
+Rendering basic/index
+Completed in 3ms (View: 1, DB: 85) | 200 OK [http://map.local/basic]
+  [4;36;1mSQL (85.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#coords (for 127.0.0.1 at 2009-08-22 15:14:14) [GET]
+  [4;35;1mCoord Load (90.5ms)[0m   [0mSELECT * FROM `coords` [0m
+  [4;36;1mCoord Columns (99.2ms)[0m   [0;1mSHOW FIELDS FROM `coords`[0m
+Completed in 199ms (View: 1, DB: 275) | 200 OK [http://map.local/basic/coords]
+  [4;35;1mSQL (85.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#index (for 127.0.0.1 at 2009-08-22 15:15:16) [GET]
+Rendering basic/index
+Completed in 3ms (View: 1, DB: 85) | 200 OK [http://map.local/basic]
+  [4;36;1mSQL (85.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BasicController#coords (for 127.0.0.1 at 2009-08-22 15:15:22) [GET]
+  [4;35;1mCoord Load (90.6ms)[0m   [0mSELECT * FROM `coords` [0m
+  [4;36;1mCoord Columns (91.6ms)[0m   [0;1mSHOW FIELDS FROM `coords`[0m
+Completed in 191ms (View: 1, DB: 268) | 200 OK [http://map.local/basic/coords]
