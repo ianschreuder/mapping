@@ -1,8 +1,12 @@
 class BasicController < ActionController::Base
-  layout "googlemap"
+  #layout "googlemap"
   
   def index
-    @coord = Coord.find(:first)
   end
-  
+
+  def coords
+    render :json => Coord.find(:all).map{|c| {:latitude=>c.latitude, :longitude => c.longitude}}
+  end
+
 end
+
