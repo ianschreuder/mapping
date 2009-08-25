@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>$.googlemaps - Examples</title>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAAwz5ST2VlEF9GI_ehSurO-xR-jg49YJ_zgRquJ1rr3fz7TwNTlBRxpHi7TNi0Jp4oPpYd2EXgniWvjg"></script>
+        <script type="text/javascript" src="googlemaps.js"></script>
+        <script type="text/javascript">
+            var a = [
+                "102 Fox St, WALGETT, NSW 2832, Australia", 
+                "1 Melaleuca St, TEMORA, NSW 2666, Australia", 
+                "77 Davidson St, DENILIQUIN, NSW 2710, Australia", 
+                "21 Cudgery St , DORRIGO, NSW 2453, Australia", 
+                "176 Milvale Road, YOUNG, NSW 2594, Australia", 
+                "Pacific Highway, HARWOOD ISLAND, NSW 2465, Australia", 
+                "55-63 Kurrajong Rd, ST MARYS, NSW 1790, Australia", 
+                "96 Yass Road, Queanbeyan, NSW 2620, Australia", 
+                "4 Corporation Avenue, BATHURST, NSW 2795, Australia", 
+                "104 Hume St , GOULBURN, NSW 2580, Australia", 
+                "Lot 2 Sydney Rd, MUDGEE, NSW 2850, Australia", 
+                "71 Auckland Street, BEGA, NSW 2550, Australia", 
+                "3 McNeilly Avenue, Orange, NSW 2800, Australia", 
+                "Cnr Snow St & Bruxner Hwy, LISMORE, NSW 2480, Australia", 
+                "Lot 2 Forbes Road, PARKES, NSW 2870, Australia", 
+                "2 Harry Boyes Avenue, KEMPSEY, NSW 2440, Australia", 
+                "287-295 Byron St, INVERELL, NSW 2360, Australia", 
+                "45-49 Douglas Mawson Rd, DUBBO, NSW 2830, Australia", 
+                "252 Hammond Ave, WAGGA WAGGA, NSW 2650, Australia", 
+                "Mullaley Rd, GUNNEDAH, NSW 2380, Australia", 
+                "246 Bridge St, TAMWORTH, NSW 2340, Australia", 
+                "226 Neeld Street, WEST WYALONG, NSW 2666, Australia", 
+                "2 Parkes Rd, FORBES, NSW 2871, Australia", 
+                "53 Young Road, COWRA, NSW 2794, Australia", 
+                "1154 Lasscock Rd, GRIFFITH, NSW 2680, Australia", 
+                "248 John St , SINGLETON, NSW 2330, Australia", 
+                "Mitchell St, CAMDEN, NSW 2570, Australia", 
+                "Newell Hwy, MOREE, NSW 2400, Australia", 
+                "Urana St, LOCKHART, NSW 2656, Australia", 
+                "38-40 Ogilvie Street, DENMAN, NSW 2328, Australia"
+            ];
+            
+            $(function() {
+                $("div#google-map").googlemap({
+                    controls: true,
+                    labels: true,
+                    zoom: 4,
+                    addresses: a,
+                    debug: true
+                });
+            })
+        </script>
+        <style type="text/css">
+            .canvas {
+                position: relative;
+                width: 800px;
+                height: 600px;
+                margin: 15px auto 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="google-map" class="canvas">
+            <!-- Google map container 1 -->
+        </div>
+        <div id="google-map2" class="canvas">
+            <!-- Google map container 2 -->
+        </div>
+    </body>
+</html>
