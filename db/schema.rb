@@ -9,23 +9,32 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 2) do
+ActiveRecord::Schema.define(:version => 3) do
 
-  create_table "coords", :force => true do |t|
-    t.string   "x_utm"
-    t.string   "y_utm"
-    t.string   "latitude"
-    t.string   "longitude"
+  create_table "areas", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "enodes", :force => true do |t|
+  create_table "areas_service_nodes", :id => false, :force => true do |t|
+    t.integer "area_id",         :null => false
+    t.integer "service_node_id", :null => false
+  end
+
+  create_table "coords", :force => true do |t|
+    t.float    "x_utm"
+    t.float    "y_utm"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "service_nodes", :force => true do |t|
     t.integer  "coord_id"
-    t.string   "info1"
-    t.string   "info2"
-    t.string   "info3"
-    t.string   "info4"
+    t.integer  "identifier"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

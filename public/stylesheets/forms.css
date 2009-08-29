@@ -63,6 +63,7 @@ input, .input, select, textarea, label, .label {
 	}
 .input {
 	width:auto;
+	margin-top:0 !important;
 	}
 .input li {
 	list-style:none !important;
@@ -77,6 +78,7 @@ label,.label {
 .input input, .input label {
 	width:auto;
 	display:inline;
+	margin-right:5px;
 	}
 .table_input {
 	border-width:1px;

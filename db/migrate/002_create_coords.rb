@@ -1,10 +1,10 @@
 class CreateCoords < ActiveRecord::Migration
   def self.up
     create_table :coords do |t|
-      t.column :x_utm, :string
-      t.column :y_utm, :string
-      t.column :latitude, :string
-      t.column :longitude, :string
+      t.column :x_utm, :float
+      t.column :y_utm, :float
+      t.column :latitude, :float
+      t.column :longitude, :float
       t.timestamps
     end
   end

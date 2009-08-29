@@ -1,0 +1,84 @@
+/* --------------------------------------------------------------------- */
+/* MESSAGES */
+/* --------------------------------------------------------------------- */
+
+/*
+
+	MESSAGE MARKUP
+	-------------------------------------------------------------
+	
+	<div class="message error">
+		<ul>
+			<li>[error message]</li>
+			<li>[error message]</li>
+			<li>[error message]</li>
+		</ul>
+	</div>
+	
+	<div class="message notice">
+		<ul>
+			<li>[notice message]</li>
+			...
+		</ul>
+	</div>
+	
+	<div class="message success">
+		<ul>
+			<li>[success message]</li>
+			...
+		</ul>
+	</div>
+
+*/
+
+.message {
+	_height:0; /* Have you thought of killing a Micro$lop "engineer" today? */
+	position:relative;
+	padding:10px;
+	border-width:2px;
+	border-style:solid;
+	-moz-border-radius:3px;
+  -webkit-border-radius:3px;
+	margin-top:1em;
+	}
+.message img {
+	position:absolute;
+	top:4px;
+	right:4px;
+	cursor:pointer;
+	width:14px;
+	height:14px;
+	}
+.message ul {
+	margin-top:0 !important;
+	}
+
+/* Error */
+
+.error {
+	background:#f1d0d0;
+	border-color:#e7a8a8;
+	}
+.error img {
+	background:url("/images/error.gif");
+	}
+
+/* Notice */
+
+.notice {
+	background:#f9f0bb;
+	border-color:#e0c52e;
+	}
+.notice img {
+	background:url("/images/notice.gif");
+	}
+
+/* Success */
+
+.success {
+	background:#bee4fa;
+	border-color:#529cc7;
+	}
+.success img {
+	background:url("/images/success.gif");
+	}

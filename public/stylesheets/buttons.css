@@ -47,12 +47,14 @@
 	margin:0;
 	font-size:12px;
 	font-weight:normal;
+	background:#EFEFEF url("/images/button_gradient.gif") repeat-x;
 	color:#600;
 	-moz-border-radius:5px;
   -webkit-border-radius:5px;
 	}
 .table_input input.button_small {
 	border-width:1px;
+	background:#d7e2ee url("/images/button_gradient.gif") repeat-x;
 	}
 button:hover, .button:hover, .button_small:hover {
 	color:#F90 !important;
@@ -110,6 +112,7 @@ input.button, input.button_small {
 	margin:0 !important;
 	}
 .pagination li span, .pagination li a, .pagination li a:link, .pagination li a:visited {
+	background:#EFEFEF url("/images/button_gradient.gif") repeat-x;
 	text-decoration:none;
 	display:block;
 	float:left;
@@ -142,55 +145,3 @@ button:hover, .button:hover, .button_small:hover, .pagination li a:hover {
 	border-width:1px 0 1px 1px;
 	}
 
-/* Stage I Buttons */
-
-#stagei button, #stagei .button, #stagei .button_small, #stagei .pagination li span, #stagei .pagination li a {
-	border-color:#cfd8e2 #c1cad3 #c1cad3 #cfd8e2;
-	color:#264C73;
-	}
-#stagei .beta .pagination {
-	border-right:1px solid #c1cad3;
-	}
-#stagei .gamma .pagination {
-	border-left:1px solid #cfd8e2;
-	}
-#stagei .table_input input.button_small {
-	border-width:1px;
-	}
-#stagei .button.disabled, #stagei .button_small.disabled, #stagei .button.disabled:hover, #stagei .button_small.disabled:hover {
-	color:#cfd8e2 !important;
-	border-color:#cfd8e2;
-	cursor:default;
-	}
-
-/* Facility Tasks Buttons */
-
-#facility_tasks button, #facility_tasks .button, #facility_tasks .button_small, #facility_tasks .pagination li span, #facility_tasks .pagination li a {
-	border-color:#cfc7ba;
-	color:#b08756;
-	}
-#facility_tasks .beta .pagination {
-	border-right:1px solid #c7cdb6;
-	}
-#facility_tasks .gamma .pagination {
-	border-left:1px solid #cfd8e2;
-	}
-#facility_tasks .table_input input.button_small {
-	border-width:1px;
-	}
-
-/* Stage II Buttons */
-
-#stageii button, #stageii .button, #stageii .button_small, #stageii .pagination li span, #stageii .pagination li a {
-	border-color:#d5dbc3 #c7cdb6 #c7cdb6 #d5dbc3;
-	color:#6b8669;
-	}
-#stageii .beta .pagination {
-	border-right:1px solid #c7cdb6;
-	}
-#stageii .gamma .pagination {
-	border-left:1px solid #d5dbc3;
-	}
-#stageii .table_input input.button_small {
-	border-width:1px;
-	}

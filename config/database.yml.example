@@ -4,4 +4,5 @@ development:
   username: external
   password: Athmol.0
 #  host: 192.168.0.105
-  host: 71.208.128.234 
+#  host: 71.208.128.234 
+  host: 127.0.0.1

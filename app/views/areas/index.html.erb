@@ -1,0 +1,26 @@
+<% content_for :title, "Manage Areas" %>
+<% content_for :additional_js_libraries do -%>
+<script src="/javascripts/areas.js" type="text/javascript"></script>
+<% end -%>
+
+<!--PANEL-->
+<div class="panel">
+
+  <div class="bar">
+    <div class="beta">
+      <a href="/areas/new" class="button insert" id="new_area_button">Add Area</a>
+    </div>
+  </div>
+  
+  <div class="content" id="area_list">
+    <%= render :partial => "areas_list" -%>
+  </div>
+
+  <div class="bar">
+    <div class="alpha">
+      <%= will_paginate @areas %>
+    </div>
+  </div>
+
+</div>
+<!--END PANEL-->

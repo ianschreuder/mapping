@@ -1,0 +1,18 @@
+/* --------------------------------------------------------------------- */
+/* TOOLTIPS */
+/* --------------------------------------------------------------------- */
+
+#tooltip {
+	background:#EFEFEF url("/images/gradient.gif") 0 0 repeat-x;
+	border-color:#f3f3f3 #d6d6d6 #d6d6d6 #f3f3f3;
+	border-width:1px;
+	border-style:solid;
+	color:#333;
+	position:absolute;
+	text-align:left;
+	padding:10px;
+	font-size:11px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	z-index:300;
+	}

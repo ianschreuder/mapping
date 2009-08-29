@@ -1,0 +1,52 @@
+body {
+	font-family:helvetica;
+	margin:.25in;
+	}
+#logo {
+	font-family:helvetica, sans-serif;
+	font-size:30px;
+	display:block;
+	position:absolute;
+	top:.25in;
+	right:.25in;
+	}
+#logo sup {
+	font-size:12px;
+	}
+#logo span {
+	color:#999;
+	}
+p,td,li,address {
+	font-size:10pt;
+	}
+h1,h2,h3,h4,h5,h6 {
+	font-weight:normal;
+	}
+h1 {font-size:16pt;}
+h2 {font-size:14pt;}
+h3 {font-size:13pt;}
+h4 {font-size:12pt;}
+h5 {font-size:11pt;}
+h6 {font-size:10pt;}
+#ft p {
+	font-size:8pt;
+	}
+li p {
+	padding:0;
+	margin:0;
+	}
+img {
+	margin-right:5pt;
+	}
+ol ol li {
+	list-style-type:lower-alpha;
+	}
+ol ul {
+	padding:0;
+	}
+ol ul li {
+	list-style:none;
+	}
+#hd,.bar {
+	display:none;
+	}

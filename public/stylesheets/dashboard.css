@@ -1,0 +1,30 @@
+/* --------------------------------------------------------------------- */
+/* DASHBOARD */
+/* --------------------------------------------------------------------- */
+
+/*
+	This css serves only to set the fixed heights of the main dashboard modules
+*/
+
+#dashboard #facility_tasks .yui-g .content,
+#dashboard #facility_tasks .yui-gb .content {
+	height:132px;
+	}
+
+/* Stage II */
+
+#dashboard #stagei .yui-g .content,
+#dashboard #stageii .yui-g .content,
+#dashboard #stagei .yui-gb .content,
+#dashboard #stageii .yui-gb .content {
+	height:270px;
+	}
+
+#dashboard #stagei .yui-g .content,
+#dashboard #stageii .yui-g .content,
+#dashboard #facility_tasks .yui-g .content,
+#dashboard #stagei .yui-gb .content,
+#dashboard #stageii .yui-gb .content,
+#dashboard #facility_tasks .yui-gb .content {
+	height:100px;
+	}

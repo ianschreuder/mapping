@@ -1,0 +1,12 @@
+<div class="yui-gd">
+  <div class="yui-u first">
+    <label for="name">Area Name</label>
+    <input type="text" id="area_name" name="area[name]" value="<%=h(@area.name)%>" />
+    <% ServiceNode.find(:all)[0..10].each do |node| -%>
+    <li>
+    <input type="checkbox" value="<%=node.id%>" name="user[permission_ids][]" id="cb_node_<%=node.id%>" />
+    <label for="cb_node_<%=node.id%>"><%=node.identifier%></label>
+    </li>
+    <% end -%>
+  </div>
+</div>
