@@ -30,8 +30,8 @@ p group(coords)
   end
   
   def group(coords)
-    $rsruby.source(RAILS_ROOT + '/lib/coordinate_grouper.R')
-    $rsruby.group(coords)
+    $rsruby.source(RAILS_ROOT + '/lib/R/coordinate_grouper.R')
+    $rsruby.group(coords.map{|c| [c.latitude, c.longitude]})
   end
   
 end
