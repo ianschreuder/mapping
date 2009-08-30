@@ -7,24 +7,16 @@
 <div class="panel">
 
   <div class="bar">
-    <div class="beta">
-			<form action="/basic/coords/" method="get" class="ajaxed" id="coord_search_form">
-				<input type="text" name="coord[latitude]" value="<%=@latitude%>" id="latitude"><label for="latitude">&nbsp;Latitude</label>
-				<input type="text" name="coord[longitude]" value="<%=@longitude%>" id="longitude"><label for="longitude">&nbsp;Longitude</label>&nbsp;&nbsp;&nbsp;
-				<input type="button" value="Get Coords" class="button" id="coord_search_button">
-			</form>
-    </div>
+		<div class="beta">
+			<a id="show_map">Grab Map</a>
+		</div>
   </div>
   
-	
-
-	<div class="content" id="result">
-		<hr/>
-		<br/>
+	<div class="content map-include">
+		<div id="map_content" class="map"></div>
+		<div id="result_coords"></div>
 	</div>
 
-  <div class="bar">
-  </div>
 
 </div>
 <!--END PANEL-->

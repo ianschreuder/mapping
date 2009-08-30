@@ -38,45 +38,6 @@ a:hover {
 	color:#F90 !important;
 	}
 
-/* Stage I */
-
-#stagei a, #stagei a:link, #stagei a:visited {
-	color:#617e9b;
-	text-decoration:none;
-	}
-#stagei .odd, #stagei .odd td, #stagei .alternate .odd li {
-	background:#f1f4f8;
-	}
-#stagei h1, #stagei h2, #stagei .bar h3, #stagei .bar h4, #stagei .bar h5, #stagei .bar h6 {
-	color:#617e9b;
-	}
-
-/* Facility Tasks */
-
-#facility_tasks a, #facility_tasks a:link, #facility_tasks a:visited {
-	color:#b08756;
-	text-decoration:none;
-	}
-#facility_tasks .odd, #facility_tasks .odd td, #facility_tasks .alternate .odd li {
-	background:#f3efe8;
-	}
-#facility_tasks h1, #facility_tasks h2, #facility_tasks .bar h3, #facility_tasks .bar h4, #facility_tasks .bar h5, #facility_tasks .bar h6 {
-	color:#b08756;
-	}
-
-/* Stage II */
-
-#stageii a, #stageii a:link, #stageii a:visited {
-	color:#6b8669;
-	text-decoration:none;
-	}
-#stageii .odd th, #stageii .odd td, #stageii .alterante .odd li {
-	background:#eef1e4;
-	}
-#stageii h1, #stageii h2, #stageii .bar h3, #stageii .bar h4, #stageii .bar h5, #stageii .bar h6 {
-	color:#6b8669;
-	}
-
 /* Link hover */
 
 a:hover, #stagei a:hover, #facility_tasks a:hover, #stageii a:hover {
@@ -137,27 +98,6 @@ table.center td, table.center th, table td.center, table th.center {
 	}
 table.right td, table.right th, table td.right, table th.right {
 	text-align:right;
-	}
-
-/* Stage II */
-
-#stageii col.break_right {
-	border-color:#d5dbc3
-	}
-#stageii col.break_left {
-	border-color:#d5dbc3
-	}
-#stageii col.break_both {
-	border-color:#d5dbc3;
-	}
-#stageii tfoot td, #stageii tfoot th {
-	border-top:1px solid #d5dbc3 !important;
-	}
-#stageii_report td, #stageii_report th {
-	text-align:center;
-	}
-#stageii_report td.left,#stageii_report th.left {
-	text-align:left;
 	}
 
 /* --------------------------------------------------------------------- */

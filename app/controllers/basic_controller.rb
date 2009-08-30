@@ -5,19 +5,27 @@ class BasicController < ActionController::Base
   end
 
   def coords
-    coords = (params[:coord]) ? get_coords_for_location(params[:coord][:latitude], params[:coord][:longitude]) : []
-    render :json => coords.map{|c| {:latitude=>c.latitude, :longitude => c.longitude}}
+    lat_min = (params[:lat_min] && params[:lat_min] != "null") ? params[:lat_min].to_f : -90
+    lat_max = (params[:lat_max] && params[:lat_max] != "null") ? params[:lat_max].to_f : 90
+    lng_min = (params[:lng_min] && params[:lng_min] != "null") ? params[:lng_min].to_f : -180
+    lng_max = (params[:lng_max] && params[:lng_max] != "null") ? params[:lng_max].to_f : 180
+    center_lat = (lat_max + lat_min) / 2.0
+    center_lng = (lng_max + lng_min) / 2.0
+    coords = get_coords_for_location(lat_min, lat_max, lng_min, lng_max)
+    coords = limit(coords)
+    data_points = coords.map{|c| {:latitude=>c.latitude, :longitude => c.longitude}}
+    render :json => {:center => {:latitude => center_lat, :longitude => center_lng}, :data_points => data_points}
   end
 
-  def enodes
-    render :json => Enode.find(:all).map{|node| {:latitude=>node.coord.latitude, :longitude => node.coord.longitude, :info1=>node.info1, :info2=>node.info2}}
-  end
-  
   private
   
-  def get_coords_for_location(lat,long)
-    return [] unless lat && long
-    Coord.find(:all).reject{|c| (lat.to_f - c.latitude).abs > 0.001  && (long.to_f - c.longitude).abs > 0.001}
+  def get_coords_for_location(lat_min, lat_max, lng_min, lng_max)
+    return [] unless lat_min && lat_max && lng_min && lng_max
+    Coord.find(:all, :conditions => "latitude > #{lat_min} and latitude < #{lat_max} and longitude > #{lng_min} and longitude < #{lng_max}")
+  end
+  
+  def limit(coords)
+    (coords && coords.length > 10) ? coords[0..10] : []
   end
 
 end
