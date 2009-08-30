@@ -13,6 +13,7 @@ class BasicController < ActionController::Base
     center_lng = (lng_max + lng_min) / 2.0
     coords = get_coords_for_location(lat_min, lat_max, lng_min, lng_max)
     coords = limit(coords)
+p group(coords)
     data_points = coords.map{|c| {:latitude=>c.latitude, :longitude => c.longitude}}
     render :json => {:center => {:latitude => center_lat, :longitude => center_lng}, :data_points => data_points}
   end
@@ -27,6 +28,11 @@ class BasicController < ActionController::Base
   def limit(coords)
     (coords && coords.length > 10) ? coords[0..10] : []
   end
-
+  
+  def group(coords)
+    $rsruby.source(RAILS_ROOT + '/lib/coordinate_grouper.R')
+    $rsruby.group(coords)
+  end
+  
 end
 
