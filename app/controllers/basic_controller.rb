@@ -13,8 +13,10 @@ class BasicController < ActionController::Base
     center_lng = (lng_max + lng_min) / 2.0
     coords = get_coords_for_location(lat_min, lat_max, lng_min, lng_max)
     coords = limit(coords)
+
 p group(coords)
-    data_points = coords.map{|c| {:latitude=>c.latitude, :longitude => c.longitude}}
+
+    data_points = coords.map{|c| {:id => c.id, :latitude=>c.latitude, :longitude => c.longitude, :status=>get_status(rand(3)), :num_points => rand(2)}}
     render :json => {:center => {:latitude => center_lat, :longitude => center_lng}, :data_points => data_points}
   end
 
@@ -32,6 +34,11 @@ p group(coords)
   def group(coords)
     $rsruby.source(RAILS_ROOT + '/lib/R/coordinate_grouper.R')
     $rsruby.group(coords.map{|c| [c.latitude, c.longitude]})
+  end
+  
+  def get_status(num)
+    return "green" if num == 1
+    (num == 2) ? "yellow" : "red"
   end
   
 end
