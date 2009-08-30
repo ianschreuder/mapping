@@ -6,7 +6,14 @@ namespace :db do
     Rake::Task['db:create'].invoke
     exec "mysql -u #{@user} #{@passwd} #{@db} < db/sql/schema.sql"
   end
+
+  task :test_migrate do
+    @DB = "test"
+    Rake::Task["db:test:clone_structure"].invoke
+  end
 end
+
+
 
 # Utility Methods
 
