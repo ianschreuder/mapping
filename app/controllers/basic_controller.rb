@@ -33,7 +33,7 @@ p group(coords)
   
   def group(coords)
     $rsruby.source(RAILS_ROOT + '/lib/R/grouper.R')
-    $rsruby.group(coords.map{|c| [c.latitude, c.longitude]})
+    $rsruby.group(coords.map{|c| [c.id, c.latitude, c.longitude]},4)
   end
   
   def get_status(num)

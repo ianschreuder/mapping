@@ -16,7 +16,5 @@ describe "Grouper" do
     grouped_coords[2][3].should == grouped_coords[3][3]
     grouped_coords[4][3].should == grouped_coords[5][3]
     grouped_coords[6][3].should == grouped_coords[7][3]
-    
   end
-  
 end
