@@ -1,9 +1,0 @@
-<% p @node %>
-<p>Coord <%=h(@node.coord.to_s)%></p>
-<p>Info 1 <%=h(@node.info1)%></p>
-<p>Info 2 <%=h(@node.info2)%></p>
-<p>Info 3 <%=h(@node.info3)%></p>
-<p>Info 4 <%=h(@node.info4)%></p>
-
-<%= link_to 'Edit', edit_enode_path(@node) %> |
-<%= link_to 'Back', enodes_path %>

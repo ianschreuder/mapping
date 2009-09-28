@@ -1,7 +1,0 @@
-<p>X UTM <%=h(@coord.x_utm)%></p>
-<p>Y UTM <%=h(@coord.y_utm)%></p>
-<p>Latitude <%=h(@coord.latitude)%></p>
-<p>Longitude <%=h(@coord.longitude)%></p>
-
-<%= link_to 'Edit', edit_coord_path(@coord) %> |
-<%= link_to 'Back', coords_path %>

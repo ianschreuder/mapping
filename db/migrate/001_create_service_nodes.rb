@@ -1,14 +1,40 @@
 class CreateServiceNodes < ActiveRecord::Migration
   def self.up
-    create_table :service_nodes do |t|
-      t.column :coord_id, :integer
-      t.column :identifier, :integer
-      t.column :name, :string
-      t.timestamps
+    
+    create_table :substations do |t|
+      t.column :lat, :float, :limit => 25
+      t.column :long, :float, :limit => 25
     end
+
+    create_table :feeders do |t|
+      t.column :substation_id, :integer
+      t.column :lat, :float, :limit => 25
+      t.column :long, :float, :limit => 25
+    end
+
+    create_table :meters do |t|
+      t.column :feeder_id, :integer
+      t.column :lat, :float, :limit => 25
+      t.column :long, :float, :limit => 25
+
+    end
+    create_table :switches do |t|
+      t.column :lat, :float, :limit => 25
+      t.column :long, :float, :limit => 25
+    end
+
+    create_table :meters_switches, :id => false do |t|
+      t.column :meter_id, :integer, :null => false
+      t.column :switch_id, :integer, :null =>false
+    end
+
+    create_table :feeders_switches, :id => false do |t|
+      t.column :feeder_id, :integer, :null => false
+      t.column :switch_id, :integer, :null =>false
+    end
+
   end
 
   def self.down
-    drop_table :service_nodes
   end
 end

@@ -9,34 +9,38 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 3) do
+ActiveRecord::Schema.define(:version => 1) do
 
-  create_table "areas", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+  create_table "feeders", :force => true do |t|
+    t.integer "substation_id"
+    t.float   "lat"
+    t.float   "long"
   end
 
-  create_table "areas_service_nodes", :id => false, :force => true do |t|
-    t.integer "area_id",         :null => false
-    t.integer "service_node_id", :null => false
+  create_table "feeders_switches", :id => false, :force => true do |t|
+    t.integer "feeder_id", :null => false
+    t.integer "switch_id", :null => false
   end
 
-  create_table "coords", :force => true do |t|
-    t.float    "x_utm"
-    t.float    "y_utm"
-    t.float    "latitude"
-    t.float    "longitude"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+  create_table "meters", :force => true do |t|
+    t.integer "feeder_id"
+    t.float   "lat"
+    t.float   "long"
   end
 
-  create_table "service_nodes", :force => true do |t|
-    t.integer  "coord_id"
-    t.integer  "identifier"
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+  create_table "meters_switches", :id => false, :force => true do |t|
+    t.integer "meter_id",  :null => false
+    t.integer "switch_id", :null => false
+  end
+
+  create_table "substations", :force => true do |t|
+    t.float "lat"
+    t.float "long"
+  end
+
+  create_table "switches", :force => true do |t|
+    t.float "lat"
+    t.float "long"
   end
 
 end
