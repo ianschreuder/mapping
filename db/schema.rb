@@ -11,36 +11,23 @@
 
 ActiveRecord::Schema.define(:version => 1) do
 
-  create_table "feeders", :force => true do |t|
-    t.integer "substation_id"
-    t.float   "lat"
-    t.float   "long"
+  create_table "turbine_forecasts", :force => true do |t|
+    t.integer  "turbine_id"
+    t.datetime "iso_date"
+    t.float    "hourly_ws"
+    t.datetime "created_at"
+    t.integer  "verify_day"
+    t.integer  "verify_hour"
+    t.integer  "lead_time"
+    t.float    "forecast"
+    t.float    "observed"
+    t.float    "error"
   end
 
-  create_table "feeders_switches", :id => false, :force => true do |t|
-    t.integer "feeder_id", :null => false
-    t.integer "switch_id", :null => false
-  end
-
-  create_table "meters", :force => true do |t|
-    t.integer "feeder_id"
-    t.float   "lat"
-    t.float   "long"
-  end
-
-  create_table "meters_switches", :id => false, :force => true do |t|
-    t.integer "meter_id",  :null => false
-    t.integer "switch_id", :null => false
-  end
-
-  create_table "substations", :force => true do |t|
-    t.float "lat"
-    t.float "long"
-  end
-
-  create_table "switches", :force => true do |t|
-    t.float "lat"
-    t.float "long"
+  create_table "turbines", :force => true do |t|
+    t.string "label"
+    t.float  "lat"
+    t.float  "long"
   end
 
 end

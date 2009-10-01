@@ -1,12 +1,17 @@
 <% content_for :title, "View Coords" %>
 <% content_for :additional_js_libraries do -%>
 <script src="/javascripts/basic.js" type="text/javascript"></script>
+<script src="/javascripts/fusionCharts.js" type="text/javascript"></script>
 <% end -%>
 
 <!--PANEL-->
 <div class="panel">
   <div id="map_content" class="box map">&nbsp;</div>
   <div id="result_coords" class="box">&nbsp;</div>
+</div>
+<div class="panel">
+	<% render_chart "/charts/Bar2D.swf","/data/forecasts/1.xml","","myChart",500,300,true,false do %>
+	<% end %>
 </div>
 <!--END PANEL-->
 

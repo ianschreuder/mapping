@@ -87,7 +87,7 @@ $(function(){
 	};
 
   $(function(){
-    updatePageCoordinates(13); // hard coded start values
+    //updatePageCoordinates(13); // hard coded start values
   });
   
 });
