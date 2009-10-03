@@ -77,7 +77,7 @@
 		event : false,
 		url : false,
 		dataString : false,
-		method : 'post',
+		method : 'get',
 		callback : function(){},
 		type : 'script',
 		message : 'Processing...',

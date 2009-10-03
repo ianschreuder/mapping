@@ -44,7 +44,7 @@ $(function(){
 				infowindow.close();
 			});
       google.maps.event.addListener(marker, 'click', function(){
-        drawChart(marker.title);
+        
       })
     });
 	  //google.maps.event.addListener(gMap, 'dragend', function() {
@@ -54,9 +54,6 @@ $(function(){
 			//listenerRedraw(gMap);
 	  //});
 	};
-
-  drawChart = function(id) {
-  };
 
 	drawCoordinateTable = function(div, data_points) {
 		var coord_table = "<table><col style='width:100px'/><col /><tr><th>Latitude</th><th>Longitude</th>";

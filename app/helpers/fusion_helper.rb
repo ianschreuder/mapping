@@ -16,9 +16,9 @@ module FusionHelper
   def render_chart(chart_swf,str_url,str_xml,chart_id,chart_width,chart_height,debug_mode,register_with_js,&block)
     chart_width=chart_width.to_s
     chart_height=chart_height.to_s
-    concat("\t\t<!-- START Script Block for Chart-->\n\t\t",block.binding) 
-    concat(content_tag("div","\n\t\t\t\tChart.\n\t\t",{:id=>chart_id+"Div",:align=>"center"}),block.binding)
-    concat("\n\t\t<script type='text/javascript'>\n",block.binding)
+    concat("\t\t<!-- START Script Block for Chart-->\n\t\t") 
+    concat(content_tag("div","\n\t\t\t\tChart.\n\t\t",{:id=>chart_id+"Div",:align=>"center"}))
+    concat("\n\t\t<script type='text/javascript'>\n")
     
     debug_mode_num="0";
     register_with_js_num="0";
@@ -31,25 +31,25 @@ module FusionHelper
       register_with_js_num="1"
     end
     
-    concat("\t\t\t\tvar chart_"+chart_id+"=new FusionCharts('"+chart_swf+"','"+chart_id+"',"+chart_width+","+chart_height+","+debug_mode_num+","+register_with_js_num+");\n",block.binding)
+    concat("\t\t\t\tvar chart_"+chart_id+"=new FusionCharts('"+chart_swf+"','"+chart_id+"',"+chart_width+","+chart_height+","+debug_mode_num+","+register_with_js_num+");\n")
     
     if str_xml==""
-      concat("\t\t\t\t<!-- Set the dataURL of the chart -->\n",block.binding)
-      concat("\t\t\t\tchart_"+chart_id+".setDataURL(\""+str_url+"\");\n",block.binding)
+      concat("\t\t\t\t<!-- Set the dataURL of the chart -->\n")
+      concat("\t\t\t\tchart_"+chart_id+".setDataURL(\""+str_url+"\");\n")
       logger.info("The method used is setDataURL.The URL is " + str_url)
     else
-      concat("\t\t\t\t<!-- Provide entire XML data using DataXML method -->\n",block.binding)
-      #concat("\t\t\t\tchart_"+chart_id+".setDataXML(\""+str_xml+"\");\n",block.binding)
-      concat("\t\t\t\t",block.binding)
-      concat('chart_'+chart_id+'.setDataXML(\''+str_xml+'\');',block.binding)
-      concat("\n",block.binding)
+      concat("\t\t\t\t<!-- Provide entire XML data using DataXML method -->\n")
+      #concat("\t\t\t\tchart_"+chart_id+".setDataXML(\""+str_xml+"\");\n")
+      concat("\t\t\t\t")
+      concat('chart_'+chart_id+'.setDataXML(\''+str_xml+'\');')
+      concat("\n")
       logger.info("The method used is setDataXML.The XML is " + str_xml)
     end
     
-    concat("\t\t\t\t<!-- Finally render the chart. -->\n",block.binding)
-    concat("\t\t\t\tchart_"+chart_id+".render('"+chart_id+"Div');\n",block.binding)
-    concat("\t\t</script>\n",block.binding)
-    concat("\t\t<!-- END Script Block for Chart. -->\n",block.binding)
+    concat("\t\t\t\t<!-- Finally render the chart. -->\n")
+    concat("\t\t\t\tchart_"+chart_id+".render('"+chart_id+"Div');\n")
+    concat("\t\t</script>\n")
+    concat("\t\t<!-- END Script Block for Chart. -->\n")
     
   end
   # Renders a chart from the swf file passed as parameter either making use of setDataURL method or 
@@ -79,7 +79,7 @@ module FusionHelper
       str_flash_vars="chartWidth="+chart_width+"&chartHeight="+chart_height+"&debugmode="+debug_mode_num+"&dataXML="+str_xml
       logger.info("The method used is setDataXML.The XML is " + str_xml)
     end
-    concat("\t\t<!-- START Code Block for Chart -->\n\t\t",block.binding)
+    concat("\t\t<!-- START Code Block for Chart -->\n\t\t")
     
     object_attributes={:classid=>"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"}
     object_attributes=object_attributes.merge(:codebase=>"http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0")
@@ -110,8 +110,8 @@ module FusionHelper
     
     embed_tag=content_tag("embed","",embed_attributes)
     
-    concat(content_tag("object","\n\t\t\t\t"+param_tag1+"\n\t\t\t\t"+param_tag2+"\n\t\t\t\t"+param_tag3+"\n\t\t\t\t"+param_tag4+"\n\t\t\t\t"+embed_tag+"\n\t\t",object_attributes),block.binding)
-    concat("\n\t\t<!-- END Code Block for Chart -->\n",block.binding)
+    concat(content_tag("object","\n\t\t\t\t"+param_tag1+"\n\t\t\t\t"+param_tag2+"\n\t\t\t\t"+param_tag3+"\n\t\t\t\t"+param_tag4+"\n\t\t\t\t"+embed_tag+"\n\t\t",object_attributes))
+    concat("\n\t\t<!-- END Code Block for Chart -->\n")
   end
   
   # Uses render_component.  

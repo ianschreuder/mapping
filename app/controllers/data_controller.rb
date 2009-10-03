@@ -1,7 +1,7 @@
 class DataController < ApplicationController
 
   def forecasts
-    @forecasts = Turbine.find(1).forecasts[0..10].map{|fore| {:value=>fore.hourly_ws, :label=>fore.day}}
+    @forecasts = Turbine.find(1).forecasts[0..10].map{|fore| {:value=>fore.hourly_ws, :label=>fore.verify_hour}}
   end
 
   def turbines
