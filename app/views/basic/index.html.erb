@@ -9,10 +9,6 @@
   <div id="map_content" class="box map">&nbsp;</div>
   <div id="result_coords" class="box">&nbsp;</div>
 </div>
-<div class="panel">
-	<% render_chart "/charts/Bar2D.swf","/data/forecasts/1.xml","","myChart",500,300,true,false do %>
-	<% end %>
-</div>
 <!--END PANEL-->
 
-
+<%= render(:partial => "chart") -%>

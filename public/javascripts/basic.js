@@ -9,7 +9,7 @@ $(function(){
 	// Method to retrieve coordinates from the database based on boundaries.
 	// When new coordinates are received, it fires the page redraw functions
 	updatePageCoordinates = function(zoom) {
-		var dataUrl = "/data/meters";
+		var dataUrl = "/data/turbines";
 		blockMap(pageContainer);
 		$.getJSON(  
 			dataUrl,
@@ -43,6 +43,9 @@ $(function(){
 			google.maps.event.addListener(marker, 'mouseout', function() {
 				infowindow.close();
 			});
+      google.maps.event.addListener(marker, 'click', function(){
+        drawChart(marker.title);
+      })
     });
 	  //google.maps.event.addListener(gMap, 'dragend', function() {
 			//listenerRedraw(gMap);
@@ -51,6 +54,9 @@ $(function(){
 			//listenerRedraw(gMap);
 	  //});
 	};
+
+  drawChart = function(id) {
+  };
 
 	drawCoordinateTable = function(div, data_points) {
 		var coord_table = "<table><col style='width:100px'/><col /><tr><th>Latitude</th><th>Longitude</th>";
@@ -87,7 +93,7 @@ $(function(){
 	};
 
   $(function(){
-    //updatePageCoordinates(13); // hard coded start values
+    updatePageCoordinates(8); // hard coded start values
   });
   
 });
