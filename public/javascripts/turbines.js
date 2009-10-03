@@ -1,11 +1,19 @@
 $(function(){
-  
-	clickListener = function(marker) {
-    $.get("/turbines/chart/"+marker.title, false, function(){}, 'script');
+
+  reloadChart = function(url) {
+    $.get(url, false, function(){}, 'script');
+  };
+	clickListener = function(turbine_id) {
+    reloadChart("/turbines/chart/"+turbine_id)
 	};
 
-  var mapCenter = new google.maps.LatLng(40.578065, -105.071905);
-  drawMapData("/data/turbines", mapCenter, 8);
+  var mapCenter = new google.maps.LatLng(40.8983, -103.9424);
+  drawMapData("/data/turbines", mapCenter, 10);
+
+  $('.week').livequery('click', function(){
+    var data = $(this).metadata();
+    reloadChart("/turbines/chart/"+data.id+"?week="+data.week)
+  });
 
 });
 

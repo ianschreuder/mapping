@@ -23,7 +23,7 @@ $(function(){
 				infowindow.close();
 			});
       google.maps.event.addListener(marker, 'click', function(){
-        clickListener(marker);
+        clickListener(item.id);
       });
 
     });
