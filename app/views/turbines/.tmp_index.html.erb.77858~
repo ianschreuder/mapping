@@ -9,7 +9,5 @@
   <div id="map_content" class="box map">&nbsp;</div>
 </div>
 
-<div class="panel" id="chart1_panel">
-</div>
-<div class="panel" id="chart2_panel">
+<div class="panel" id="chart_panel">
 </div>

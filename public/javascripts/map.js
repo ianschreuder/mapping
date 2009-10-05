@@ -13,15 +13,15 @@ $(function(){
 	  var gMap = new google.maps.Map(div, mapOptions);
     $.each(data_points, function(i,item){
 			var point = new google.maps.LatLng(item.lat, item.long);
-      var marker = new google.maps.Marker({position: point, map: gMap, title: "ID: "+item.id});
-			var content = "<div><h3>ID: " + item.id + "</h3></div";
-			var infowindow = new google.maps.InfoWindow({content: content});
-      google.maps.event.addListener(marker, 'mouseover', function() {
-				infowindow.open(gMap, marker);
-			});
-			google.maps.event.addListener(marker, 'mouseout', function() {
-				infowindow.close();
-			});
+      var marker = new google.maps.Marker({position: point, map: gMap, title: "ID: "+item.label});
+//			var content = "<div><h3>ID: " + item.id + "</h3></div";
+//			var infowindow = new google.maps.InfoWindow({content: content});
+//      google.maps.event.addListener(marker, 'mouseover', function() {
+//				infowindow.open(gMap, marker);
+//			});
+//			google.maps.event.addListener(marker, 'mouseout', function() {
+//				infowindow.close();
+//			});
       google.maps.event.addListener(marker, 'click', function(){
         clickListener(item.id);
       });
